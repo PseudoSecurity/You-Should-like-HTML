@@ -4,30 +4,38 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Delius&family=Jersey+20&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <style>
-        .focus-in-contract-bck {
-    padding-bottom: 0%;
-    animation-delay: 2s;
-	-webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation-delay: 2s;
-        }
-        @keyframes focus-in-contract-bck {
+.text-focus-in {
+  top: -10%;
+  text-align: center;
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation-delay: 1.5s;
+}
+@-webkit-keyframes text-focus-in {
   0% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(300px);
-            transform: translateZ(300px);
     -webkit-filter: blur(12px);
             filter: blur(12px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateZ(12px);
-            transform: translateZ(12px);
-    -webkit-filter: blur(0);
-            filter: blur(0);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
     opacity: 1;
   }
 }
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
 body{
     background-color: black;
     color: rgb(26, 160, 194);
@@ -40,11 +48,11 @@ h1{
 	text-align:center;
 }
     </style>
-    <h1 class="focus-in-contract-bck">Mila</h1>
-    <h1 class="focus-in-contract-bck">Cant Spell basic words</h1>
-    <img class="focus-in-contract-bck" style="border-radius: 10%;" src="https://i.imgflip.com/64sz4u.png?a486840">
-	<h1 class="focus-in-contract-bck">No Life</h1>
-	<h1 class="focus-in-contract-bck">Brain Rotting</h1>
-	<h1 class="focus-in-contract-bck">Tink Tonk Addict</h1>
-	<h1 class="focus-in-contract-bck">Illiterate</h1>
+    <h1 class="text-focus-in">Mila</h1>
+    <h1 class="text-focus-in">Cant Spell basic words</h1>
+    <img class="text-focus-in" style="border-radius: 10%;" src="https://i.imgflip.com/64sz4u.png?a486840">
+	<h1 class="text-focus-in">No Life</h1>
+	<h1 class="text-focus-in">Brain Rotting</h1>
+	<h1 class="text-focus-in">Tink Tonk Addict</h1>
+	<h1 class="text-focus-in">Illiterate</h1>
 </html>
